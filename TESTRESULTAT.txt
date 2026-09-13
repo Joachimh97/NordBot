@@ -1,0 +1,42 @@
+NORDBOT 1.3 – PROGRAMTESTER
+Dato: 11. september 2026
+Miljø: Linux, Python 3.12.14
+
+RESULTAT: 164 automatiske tester, alle bestått.
+Kommando: python3 run_tests.py
+Utgående socket-tilkoblinger var blokkert i testkjøringen.
+
+Testene omfatter blant annet:
+- Separasjon mellom papirhandel og private/ekte API-kall.
+- Journal før innsending; ukjent ordresvar og gjenoppretting uten blind gjentakelse.
+- Delutførelser, følgeordre, manglende følgeordre og utførelse under kansellering.
+- Ingen nytt salg av allerede solgt mengde; tidligere kontobeholdning bevares.
+- Vedvarende og uavhengige sperrer; omstart og UTC-døgnskifte.
+- Risiko før strategi; feil i historikk/nyheter stopper ikke fersk prisbasert risikokontroll.
+- Vedvarende forsøk etter midlertidige feil; nødstopp behandles før offentlige datakrav.
+- Decimal-regnskap, backup, gjenoppretting og varig nonce ved klokkeskifte.
+- CRC32/ordrebok, sekvenshull, instrumentpresisjon og API-budsjett.
+- IOC/FOK/maker i simulator, intrabar-stopp og opptaksavspilling.
+- RSS-versjoner og først sett; ingen fremtidig tekst i eldre vurdering.
+- Læring først etter avsluttet utfall; mistede utfall trenes ikke; gjenopptak ved omstart.
+- Fryste modellversjoner, kronologisk oppdeling, purging og engangs slutt-test.
+- Eksport uten fremtidige valutakurser; manglende markouts merkes.
+- Tkinter-knappreferanser og oppstartsløp med et simulert grensesnitt.
+- UTF-8 med PowerShell-BOM og avkastningsfiler med hull/ugyldige tall.
+
+Separat sammenhengende CLI-kontroll:
+Konfigurasjonsfil, import og listing av 1800 syntetiske ettminuttsperioder,
+åtte sammenligningsvarianter og DSR/PBO-rapport. Nettverk blokkert.
+Syntetiske data er bare programkontroll, ikke resultatbevis eller virkelig historikk.
+Eventuelle avviste stressvarianter blir synlige feilsvar i forsøksregisteret.
+
+IKKE GJENNOMFØRT:
+- Visuell kjøring/klikk på en virkelig Windows-PC eller start av BAT-filer under Windows.
+- Ordre mot autentisert Kraken-konto, ekte gebyrer, delutførelser eller stopputførelse.
+- Langvarig drift, nettverksbelastning eller flere døgn med fullstendige markedsopptak.
+- FinBERT-kjøring med faktiske modellvekter eller målt økonomisk nytte av nyhetsfilteret.
+- Flerårig virkelig historikktest eller dokumentasjon av lønnsomhet.
+
+Nye native ordretyper, amend, ATR/momentum og modellstyring er papirforsøk.
+Les RAPPORTSTATUS.html for implementeringsstatus og videre verifiseringsbehov.
+En bestått testpakke er ikke en garanti mot tap, alle programfeil eller børsavvik.

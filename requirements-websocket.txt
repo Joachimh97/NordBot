@@ -1,0 +1,2 @@
+# Optional public/private Kraken v2 transport; tested dependency version.
+websockets==16.0
